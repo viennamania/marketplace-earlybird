@@ -1,0 +1,57 @@
+{
+  "name": "my-marketplace",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.15",
+    "@hookform/resolvers": "^3.1.0",
+    "@mui/material": "^5.13.4",
+    "@react-three/drei": "^9.74.7",
+    "@react-three/fiber": "^8.13.0",
+    "@thirdweb-dev/react": "^3.13.1",
+    "@thirdweb-dev/sdk": "^3.10.21",
+    "@tippyjs/react": "^4.2.6",
+    "@types/react-table": "^7.7.14",
+    "@types/uuid": "^9.0.2",
+    "alchemy-sdk": "^2.9.0",
+    "classnames": "^2.3.2",
+    "date-fns": "^2.30.0",
+    "dayjs": "^1.11.8",
+    "ethers": "5",
+    "framer-motion": "^10.12.16",
+    "jotai": "^2.1.1",
+    "leva": "^0.9.34",
+    "next": "^13",
+    "next-seo": "^6.0.0",
+    "next-themes": "^0.2.1",
+    "overlayscrollbars-react": "^0.5.0",
+    "rc-slider": "^10.2.0",
+    "react": "^18.2.0",
+    "react-countdown": "^2.3.5",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.44.3",
+    "react-share": "^4.4.1",
+    "react-table": "^7.8.0",
+    "react-use": "^17.4.0",
+    "recharts": "^2.6.2",
+    "swiper": "^9.3.2",
+    "swr": "^2.1.5",
+    "web3modal": "^1.9.12",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.31",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "typescript": "5.0.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
