@@ -61,6 +61,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 clientId: 'efa05253-e8b1-4adb-b978-996f8f2f409c',
               }),
             ]}
+            /*
             sdkOptions={{
               gasless: {
                 openzeppelin: {
@@ -68,6 +69,8 @@ function MyApp({ Component, pageProps }: AppProps) {
                 },
               },
             }}
+            */
+           
           >      
       
       <Header />

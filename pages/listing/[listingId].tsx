@@ -177,8 +177,9 @@ const ListingPage: NextPage = () => {
 
   return (
 
-    <div className={styles.container} style={{}}>
-      <div className={styles.listingContainer}>
+    <div className="mt-32 flex flex-col justify-center items-center ">
+
+      
 
 
         {address &&
@@ -203,11 +204,13 @@ const ListingPage: NextPage = () => {
         </h3>
             */}
         
+        {/*
         <h3>
           My Balance: <b>{Number(tokenBalanceUSDC?.displayValue).toFixed(2)}</b>{' '}
           {tokenBalanceUSDC?.symbol}
         </h3>
-              
+          */}
+
 
         </>
         }
@@ -369,7 +372,7 @@ const ListingPage: NextPage = () => {
       </footer>
 
 
-      </div>
+   
 
 
 

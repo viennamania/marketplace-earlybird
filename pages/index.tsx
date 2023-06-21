@@ -77,11 +77,12 @@ const Home: NextPage = () => {
   return (
     <>
 
+
       {/* Content */}
-      <div className={styles.container}>
+      <div className="mt-32 flex flex-col justify-center items-center">
 
         {/* Top Section */}
-        <h3>GRANDERBY Marketplace</h3>
+        <h1 className="p-5">GRANDERBY Marketplace</h1>
 
         {address &&
         <>
@@ -105,11 +106,12 @@ const Home: NextPage = () => {
         </h3>
             */}
         
-        <h3>
+        {/*
+        <h3 className="p-5">
           My Balance: <b>{Number(tokenBalanceUSDC?.displayValue).toFixed(2)}</b>{' '}
           {tokenBalanceUSDC?.symbol}
         </h3>
-              
+          */}
 
         
         {/*

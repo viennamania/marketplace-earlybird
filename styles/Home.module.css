@@ -36,7 +36,7 @@
 .container {
   margin-top: 96px;
   display: flex;
-  flex-direction: column;
+  flex-direction: col;
   align-items: center;
   justify-content: center;
   width: 100vw;
