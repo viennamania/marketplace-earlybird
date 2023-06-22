@@ -251,6 +251,8 @@ const ListingPage: NextPage = () => {
         }
         
 
+ 
+
           <h2 className="mb-5">
             {directListing?.asset.name}
           </h2>
@@ -260,7 +262,7 @@ const ListingPage: NextPage = () => {
             <div className="mb-5">
               <MediaRenderer
                 src={directListing?.asset.image}
-                className={styles.mainNftImage}
+                className="bg-cover w-80 h-80 rounded-lg"
               />
             </div>
 
@@ -270,10 +272,10 @@ const ListingPage: NextPage = () => {
 
                 {/*nftData?.attributes*/}
 
-                {nftAttributes?.map((attribute) => (
+                {nftAttributes?.map((attribute, index) => (
                   <div
                     className="mb-1 flex flex-col items-left justify-center"
-                    key={attribute.id}
+                    key={index}
                   >
 
                     <div className="flex flex-row gap-5">
