@@ -31,13 +31,18 @@ import {
 
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 
 
 import styles from "../../styles/Home.module.css";
 
+
+
 const ListingPage: NextPage = () => {
+
+
+
+
   // Next JS Router hook to redirect to other pages and to grab the query from the URL (listingId)
   const router = useRouter();
 
@@ -89,16 +94,17 @@ const ListingPage: NextPage = () => {
   // Store the bid amount the user entered into the bidding textbox
   const [bidAmount, setBidAmount] = useState<string>("");
 
+
+
+  /*
   if (loadingListing) {
     return <div className={styles.loadingOrError}>Loading...</div>;
   }
 
-
-  console.log("directListing", directListing);
-
   if (!directListing) {
     return <div className={styles.loadingOrError}>Listing not found</div>;
   }
+  */
 
   
   async function createBidOrOffer() {
@@ -146,6 +152,7 @@ const ListingPage: NextPage = () => {
   }
 
 
+
   async function buyNft() {
     try {
       // Ensure user is on the correct network
@@ -164,8 +171,9 @@ const ListingPage: NextPage = () => {
       // Quantity of the asset you want to buy
       const quantityDesired = 1;
 
-      await marketplace?.directListings.buyFromListing(listingId, quantityDesired, address);
+      const result = await marketplace?.directListings.buyFromListing(listingId, quantityDesired, address);
 
+      console.log("result", result);
 
       alert("NFT bought successfully!");
 
@@ -174,6 +182,33 @@ const ListingPage: NextPage = () => {
       alert(error);
     }
   }
+
+
+  //const [nftData, setNftData] = useState();
+  const [nftAttributes, setNftAttributes] = useState([]);
+
+  useEffect(() => {
+
+    const getNFT = async () => {
+      
+      if (directListing?.asset.uri) {
+          const res = await fetch(directListing?.asset.uri);
+          ///const res = await fetch('/apiBlogPosts');
+          const data = await res.json();
+
+          setNftAttributes(data?.attributes);
+
+
+          //console.log("data", data);
+      }
+      
+    };
+
+    getNFT();
+
+  }, [directListing?.asset.uri]);
+  
+
 
   return (
 
@@ -216,20 +251,46 @@ const ListingPage: NextPage = () => {
         }
         
 
-        <h3>{directListing.asset.name}</h3>
+          <h2 className="mb-5">
+            {directListing?.asset.name}
+          </h2>
 
-        <div className={styles.leftListing}>
-          <MediaRenderer
-            src={directListing.asset.image}
-            className={styles.mainNftImage}
-          />
-        </div>
+          <div className="flex flex-row">
 
-        <div className={styles.rightListing}>
-          
-          
+            <div className="mb-5">
+              <MediaRenderer
+                src={directListing?.asset.image}
+                className={styles.mainNftImage}
+              />
+            </div>
 
-          <p>
+            <div className="flex flex-col ml-5">
+              
+              <div className="flex flex-col">
+
+                {/*nftData?.attributes*/}
+
+                {nftAttributes?.map((attribute) => (
+                  <div
+                    className="mb-1 flex flex-col items-left justify-center"
+                    key={attribute.id}
+                  >
+
+                    <div className="flex flex-row gap-5">
+                      <span>{attribute.trait_type}</span>
+                      <span>{attribute.value}</span>
+                    </div>
+
+                  </div>
+                ))}
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <p className="m-5">
             Owned by{" "}
             <b>
               {/*
@@ -237,29 +298,22 @@ const ListingPage: NextPage = () => {
                 "..." +
                 directListing.sellerAddress?.slice(36, 40)}
               */}
-                {directListing.creatorAddress?.slice(0, 6) +
+                {directListing?.creatorAddress?.slice(0, 6) +
                 "..." +
-                directListing.creatorAddress?.slice(36, 40)}
+                directListing?.creatorAddress?.slice(36, 40)}
             </b>
           </p>
 
-          <h2>
+          <h2 className="m-5">
             {/*
             <b>{directListing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
             {directListing.buyoutCurrencyValuePerToken.symbol}
                 */}
-            <b>{directListing.currencyValuePerToken.displayValue}</b>{" "}
-            {directListing.currencyValuePerToken.symbol}
+            <b>{directListing?.currencyValuePerToken.displayValue}</b>{" "}
+            {directListing?.currencyValuePerToken.symbol}
           </h2>
 
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              gap: 20,
-              alignItems: "center",
-            }}
-          >
+          <div className="mb-10">
 
 {/*
             <button
@@ -271,7 +325,7 @@ const ListingPage: NextPage = () => {
             </button>
           */}
 
-          {directListing.quantity === "0" ?
+          {directListing?.quantity === "0" ?
             <div>
               Sell completed.
             </div>
@@ -324,8 +378,6 @@ const ListingPage: NextPage = () => {
               </button>
             </div>
               */}
-
-          </div>
 
         </div>
 

@@ -77,12 +77,24 @@ const Home: NextPage = () => {
   return (
     <>
 
-
       {/* Content */}
       <div className="mt-32 flex flex-col justify-center items-center">
 
         {/* Top Section */}
         <h1 className="p-5">GRANDERBY Marketplace</h1>
+
+{/*
+        <div className="h-36 w-full flex justify-center items-center border">
+          <Image
+            fill
+            src="/banner.png"
+            alt="banner"
+            //width={1024}
+            //height={64}
+            className="object-contain"
+          />
+        </div>
+  */}
 
         {address &&
         <>
@@ -145,14 +157,29 @@ const Home: NextPage = () => {
         </div>
 */}
 
-        <div style={{ marginBottom: 200}}>
+        <div className="m-10">
           {
             // If the listings are loading, show a loading message
             loadingListings ? (
-              <div>Loading listings...</div>
+              <>
+                <div>Loading listings...</div>
+
+                
+                <video
+                  id="intro-video"
+                  src="/mov/intro.mp4"
+                  muted
+                  autoPlay
+                  className="rounded-lg"
+                ></video>
+            
+
+              </>
             ) : (
 
-              // Otherwise, show the listings
+
+
+              
               <div className={styles.listingGrid}>
                 {directListings?.map((listing) => (
                   <div
@@ -193,6 +220,8 @@ const Home: NextPage = () => {
                   </div>
                 ))}
               </div>
+
+      
             )
 
           }

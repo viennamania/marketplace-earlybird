@@ -158,12 +158,17 @@ const Create: NextPage = () => {
             Upload your NFT to the marketplace:
           </h1>
 
-{/*
+
+
+
+
+
           <Web3Button
-            contractAddress={marketplace }
+            theme="dark"
+            contractAddress={marketplaceContractAddress}
             action={() =>
               createDirectListing({
-                assetContractAddress: "{{ marketplace} }",
+                assetContractAddress: "{{asset_contract_address}}",
                 tokenId: "{{token_id}}",
                 pricePerToken: "{{price_per_token}}",
                 currencyContractAddress: "{{currency_contract_address}}",
@@ -178,7 +183,8 @@ const Create: NextPage = () => {
           >
             Create Direct Listing
           </Web3Button>
-          */}
+
+          
 
         </div>
       </div>
