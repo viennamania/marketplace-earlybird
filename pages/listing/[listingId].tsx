@@ -184,8 +184,19 @@ const ListingPage: NextPage = () => {
   }
 
 
+
+  interface IProduct {
+    trait_type: string;
+    value: string;
+  }
+
+  const initialProducts: IProduct[] = [ 
+  ]
+
+  //let attributeData: AttributeListProps[];
+
   //const [nftData, setNftData] = useState();
-  const [nftAttributes, setNftAttributes] = useState([]);
+  const [nftAttributes, setNftAttributes] = useState(initialProducts);
 
   useEffect(() => {
 
@@ -199,7 +210,7 @@ const ListingPage: NextPage = () => {
           setNftAttributes(data?.attributes);
 
 
-          //console.log("data", data);
+          console.log("data", data);
       }
       
     };
