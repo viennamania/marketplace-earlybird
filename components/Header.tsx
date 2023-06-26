@@ -30,20 +30,24 @@ export default function Header() {
       <div className={styles.left}>
         <div>
           <Link href="/" passHref role="button">
-            <Image
-              src={`/logo.png`}
-              alt="Logo"
-              width={30}
-              height={30}
-              style={{ cursor: "pointer" }}
-            />
+
+            <div className="flex flex-row justify-center items-center">
+              <Image
+                src={`/logo.png`}
+                alt="Logo"
+                width={30}
+                height={30}
+                style={{ cursor: "pointer" }}
+              />
+              <span className="ml-2">Granderby Market</span>
+            </div>
           </Link>
         </div>
       </div>
 
       <div className={styles.right}>
 
-      <ConnectWallet theme="dark" />
+      <ConnectWallet theme="light" />
 
 {/*
         {address ? (
