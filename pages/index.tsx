@@ -188,15 +188,19 @@ const Home: NextPage = () => {
                     onClick={() => router.push(`/listing/${listing.id}`)}
                   >
 
-                    <h2 className={styles.nameContainer}>
-                      
-                      <Link href={`/listing/${listing.id}`} className={styles.name}>
-                      
-                        {listing.asset.name}
+                    <div className="flex flex-col">
+
+                      <span className="text-xs text-left ml-5 mt-2 mb-2">Listing Number: {listing.id}</span>                    
+                      <h2 className="">
                         
-                      </Link>
+                        <Link href={`/listing/${listing.id}`} className={styles.name}>
                         
-                    </h2>
+                          {listing.asset.name}
+                          
+                        </Link>
+                          
+                      </h2>
+                    </div>
 
                     <MediaRenderer
                       src={listing.asset.image}
