@@ -33,6 +33,14 @@ import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
+import Image from '@/components/ui/image';
+
+import LogoMomocon from '@/assets/images/logo-momocon.svg';
+
+import { Instagram } from '@/components/icons/brands/instagram';
+import { Twitter } from '@/components/icons/brands/twitter';
+import AnchorLink from '@/components/ui/links/anchor-link';
+
 
 import styles from "../../styles/Home.module.css";
 
@@ -397,7 +405,7 @@ const ListingPage: NextPage = () => {
 
         <hr className={styles.divider} />
 
-        <footer>
+        <footer className="w-full">
 
             <div className="flex-cols mt-10 flex items-center justify-center gap-3 bg-gray-800 pb-5 pt-10 text-white ">
               <div>Copyright ©MOMOCON</div>
@@ -409,7 +417,7 @@ const ListingPage: NextPage = () => {
         */}
             </div>
 
-{/*
+
             <div className=" flex-cols flex items-center justify-center gap-3 bg-gray-800 pb-20 pt-3 text-white ">
               <div>
                 <Image src={LogoMomocon} alt="MOMOCON" width={48} height={48} />
@@ -430,7 +438,7 @@ const ListingPage: NextPage = () => {
                 <Twitter className="h-4 w-4" /> Twitter
               </AnchorLink>
             </div>
-      */}
+      
 
 
 

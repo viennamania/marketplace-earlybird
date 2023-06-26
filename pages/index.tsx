@@ -162,7 +162,7 @@ const Home: NextPage = () => {
         </div>
 
 
-        <div className="m-10">
+        <div className="m-5">
           {
             // If the listings are loading, show a loading message
             loadingListings ? (
@@ -195,8 +195,8 @@ const Home: NextPage = () => {
 
                     <div className="flex flex-col">
 
-                      <span className="text-xs text-left ml-5 mt-2 mb-2">Listing Number: {listing.id}</span>                    
-                      <h2 className="">
+                      <span className="text-xs mt-2 mb-2">Listing: {listing.id}</span>                    
+                      <span className="text-xs">
                         
                         <Link href={`/listing/${listing.id}`} className={styles.name}>
                         
@@ -204,7 +204,7 @@ const Home: NextPage = () => {
                           
                         </Link>
                           
-                      </h2>
+                      </span>
                     </div>
 
                     <MediaRenderer
@@ -220,8 +220,8 @@ const Home: NextPage = () => {
 
 
 
-                    <p>
-                      <b>{listing.currencyValuePerToken.displayValue}</b>{" "}
+                    <p className="text-xs mb-2">
+                      Price: <b>{listing.currencyValuePerToken.displayValue}</b>{" "}
                       {listing.currencyValuePerToken.symbol}
                     </p>
                     
@@ -239,7 +239,7 @@ const Home: NextPage = () => {
 
         <hr className={styles.divider} />
 
-        <footer>
+        <footer className="w-full">
 
             <div className="flex-cols mt-10 flex items-center justify-center gap-3 bg-gray-800 pb-5 pt-10 text-white ">
               <div>Copyright ©MOMOCON</div>
@@ -251,7 +251,7 @@ const Home: NextPage = () => {
         */}
             </div>
 
-{/*
+
             <div className=" flex-cols flex items-center justify-center gap-3 bg-gray-800 pb-20 pt-3 text-white ">
               <div>
                 <Image src={LogoMomocon} alt="MOMOCON" width={48} height={48} />
@@ -272,7 +272,7 @@ const Home: NextPage = () => {
                 <Twitter className="h-4 w-4" /> Twitter
               </AnchorLink>
             </div>
-      */}
+      
 
 
 
