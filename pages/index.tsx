@@ -157,6 +157,11 @@ const Home: NextPage = () => {
         </div>
 */}
 
+        <div className="mt-5 w-full">
+          Listings: {directListings?.length}
+        </div>
+
+
         <div className="m-10">
           {
             // If the listings are loading, show a loading message
