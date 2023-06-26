@@ -81,7 +81,9 @@ const Home: NextPage = () => {
       <div className="mt-32 flex flex-col justify-center items-center">
 
         {/* Top Section */}
+        {/*
         <h1 className="p-5">GRANDERBY Marketplace</h1>
+  */}
 
 {/*
         <div className="h-36 w-full flex justify-center items-center border">
@@ -157,12 +159,28 @@ const Home: NextPage = () => {
         </div>
 */}
 
-        <div className="mt-5 w-full">
+        <div className="mt-5 w-full text-4xl">
           Listings: {directListings?.length}
         </div>
 
 
-        <div className="m-5">
+        <div className="m-3">
+
+          {directListings?.length === 0 &&
+            <>
+            
+            <Image
+              //fill
+              src="/soldout.jpg"
+              alt="banner"
+              width={2048}
+              height={64}
+              className="object-contain rounded-lg"
+            />
+
+            </>
+          }
+
           {
             // If the listings are loading, show a loading message
             loadingListings ? (
