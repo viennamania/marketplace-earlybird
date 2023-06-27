@@ -159,7 +159,7 @@ const Home: NextPage = () => {
         </div>
 */}
 
-        <div className="mt-5 w-full text-4xl">
+        <div className="mt-5 w-full text-2xl">
           Listings: {directListings?.length}
         </div>
 
@@ -171,7 +171,7 @@ const Home: NextPage = () => {
             
             <Image
               //fill
-              src="/soldout.jpg"
+              src="/soldout.jpeg"
               alt="banner"
               width={2048}
               height={64}
