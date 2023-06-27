@@ -43,13 +43,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:site_name" content="GRANDERBY"></meta>
         <meta property="og:title" content="GRANDERBY"></meta>
         <meta property="og:description" content="powered by MOMOCON"></meta>
-        <meta property="og:image" content="/intro-bg.png"></meta>
+        <meta property="og:image" content="/intro-bg.jpeg"></meta>
 
         <meta property="og:image:width" content="1400"></meta>
         <meta property="og:image:height" content="1400"></meta>
 
         <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="twitter:image" content="/intro-bg.png"></meta>
+        <meta name="twitter:image" content="/intro-bg.jpeg"></meta>
 
       </Head>
 
