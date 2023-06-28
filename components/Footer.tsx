@@ -18,7 +18,7 @@ export default function Footer() {
   ///const url = "https://github.com/thirdweb-example/marketplace-next-ts";
   return (
 
-    <footer>
+    <footer className="mt-10">
       <div className=" flex-cols flex items-center justify-center gap-3 bg-gray-800 pb-5 pt-10 text-white ">
         <div>Copyright ©MOMOCON</div>
 

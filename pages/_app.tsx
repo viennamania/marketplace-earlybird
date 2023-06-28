@@ -78,13 +78,14 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Header />
 
       <Component {...pageProps} />
+      
       {/*
       <ThirdwebGuideFooter />
-  */}
+          */}
 
-{/*
+
       <Footer />
-*/}
+
 
     </ThirdwebProvider>
 

@@ -29,6 +29,7 @@
     "next": "^13",
     "next-seo": "^6.0.0",
     "next-themes": "^0.2.1",
+    "overlayscrollbars": "^2.2.0",
     "overlayscrollbars-react": "^0.5.0",
     "rc-slider": "^10.2.0",
     "react": "^18.2.0",
