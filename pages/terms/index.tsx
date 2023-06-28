@@ -170,11 +170,11 @@ const MintPage: NextPageWithLayout = () => {
             GRANDERBY.
           </li>
           <li>
-            GRANDERBY is a distributed application that runs on the Ethereum
+            GRANDERBY is a distributed application that runs on the Polygon
             network, using uniquely developed smart contracts (
             <b>Smart Contracts</b>) to enable users to purchase, sell, breed and
             race statistically unique digital thoroughbreds, which can then be
-            visualized on a website that the user can interact and earn Ethereum
+            visualized on a website that the user can interact and earn Polygon
             from GRANDERBY (<b>GRANDERBY</b>).
           </li>
           <li>
@@ -339,15 +339,15 @@ const MintPage: NextPageWithLayout = () => {
             install the Google Chrome web browser. Once you have installed
             Chrome, you will need to install a browser extension called
             MetaMask. MetaMask is an electronic digital wallet, which allows you
-            to purchase, store, and engage in transactions using Ethereum or any
+            to purchase, store, and engage in transactions using Polygon or any
             other ERC-20 cryptocurrency. You will not be able to engage in any
             transactions on GRANDERBY other than through MetaMask (or other
-            Ethereum-compatible browsers) or an email address, where GRANDERBY
+            Polygon-compatible browsers) or an email address, where GRANDERBY
             creates a non-custodial electronic digital wallet for you.
           </li>
           <li>
             GRANDERBY will only recognize you as a user and you will only be
-            able to interact with GRANDERBY, if your Ethereum electronic digital
+            able to interact with GRANDERBY, if your Polygon electronic digital
             wallet is connected and unlocked through your MetaMask account or
             your email address. There is no other way to sign up as a user, or
             to interact directly with GRANDERBY. BY USING OUR SERVICES YOU AGREE
@@ -364,14 +364,14 @@ const MintPage: NextPageWithLayout = () => {
           <li>
             Transactions that take place on GRANDERBY are managed and confirmed
             via the Polygon blockchain, which is a proof of stake network, and a
-            sidechain to the Ethereum blockchain. The main Ethereum blockchain
+            sidechain to the Polygon blockchain. The main Polygon blockchain
             is currently a proof of work network. Proof of stake networks use
             less energy than proof of work networks. You understand that your
-            Ethereum public address will be made publicly visible whenever you
+            Polygon public address will be made publicly visible whenever you
             engage in a transaction on GRANDERBY.
           </li>
           <li>
-            We neither own nor control MetaMask, Google Chrome, the Ethereum
+            We neither own nor control MetaMask, Google Chrome, the Polygon
             network, or any other third party site, product, or service that you
             might access, visit, or use for the purpose of enabling you to use
             the various features of GRANDERBY. GRANDERBY will not be liable for
@@ -385,7 +385,7 @@ const MintPage: NextPageWithLayout = () => {
             agree to provide accurate, current and complete account information
             about yourself, and to maintain and promptly update as necessary
             your account information. You are responsible for the security of
-            your account and your MetaMask wallet (and other Ethereum wallets
+            your account and your MetaMask wallet (and other Polygon wallets
             and email accounts).
           </li>
           <li>
@@ -410,14 +410,14 @@ const MintPage: NextPageWithLayout = () => {
                 If you elect to purchase, sell or breed racehorses using
                 GRANDERBY, or with or from other users in GRANDERBY, any
                 financial transactions that you engage in will be conducted
-                solely through the Ethereum network via MetaMask. We will have
+                solely through the Polygon network via MetaMask. We will have
                 no insight into or control over these payments or transactions,
                 nor do we have the ability to reverse any transactions. With
                 that in mind, we will have no liability to you or to any third
                 party for any claims or damages that may arise as a result of
                 any transactions that you engage in via the App, or using the
                 Smart Contracts, or any other transactions that you conduct via
-                the Ethereum network or MetaMask.
+                the Polygon network or MetaMask.
               </li>
               <li>
                 10% of the fee paid for pay-to-enter races will be allocated and
@@ -429,9 +429,9 @@ const MintPage: NextPageWithLayout = () => {
             </ol>
           </li>
           <li>
-            Ethereum requires the payment of a transaction fee (a “Gas Fee”) for
-            every transaction that occurs on the Ethereum network. The Gas Fee
-            funds the network of computers that run the decentralized Ethereum
+            Polygon requires the payment of a transaction fee (a “Gas Fee”) for
+            every transaction that occurs on the Polygon network. The Gas Fee
+            funds the network of computers that run the decentralized Polygon
             network. This means that you will need to pay a Gas Fee for each
             transaction that occurs via the App.
           </li>
@@ -442,7 +442,7 @@ const MintPage: NextPageWithLayout = () => {
             (a “Commission”). These events include purchasing, selling or
             breeding of a thoroughbred on the App. You acknowledge and agree
             that the Commission will be transferred directly to us through the
-            Ethereum network as part of your payment.
+            Polygon network as part of your payment.
           </li>
           <br />
           <b>TERMS OF SALE OF NON-FUNGIBLE TOKENS</b>
@@ -1626,7 +1626,7 @@ const MintPage: NextPageWithLayout = () => {
             <br />
             <b>GRANDERBY</b> means the GRANDERBY online game and associated
             software interfaces for that game, including the home website for
-            GRANDERBY, elements of which are located on the Ethereum Blockchain.
+            GRANDERBY, elements of which are located on the Polygon Blockchain.
           </li>
         </ol>
       </div>
